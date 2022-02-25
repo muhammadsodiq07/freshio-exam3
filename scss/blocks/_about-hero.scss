@@ -1,4 +1,6 @@
-
+#aboutmain {
+  padding-top: 50px;
+}
 .aboutus__list {
   padding: 0 !important;  
 }
@@ -32,11 +34,12 @@
 
 .aboutus__title {
   position: relative;
+  font-family: $font-mazzard-normal;
   left: -15px;
   font-size: 2em;
-  font-family: $font-mazzard-normal;
   font-weight: 400;
   line-height: 1.1;
+  margin-bottom: 25px;
   color: $color-modal;
 }
 .aboutus__pp {

@@ -118,7 +118,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 1000%;
+  height: 100%;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -3018,9 +3018,12 @@ img {
   width: 100%;
 }
 
+.about__main {
+  margin-left: 100px;
+}
+
 .about {
   padding: 25px 55px;
-  margin-left: 120px;
   background-color: #bac34e;
   border-radius: 30px;
 }
@@ -3030,12 +3033,13 @@ img {
   background-image: url("https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_bg-breadcrumb.jpg?v=1605078920");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 350px;
+  height: 300px;
 }
 
 .about__name {
-  padding: 150px 0;
+  padding: 130px 0;
 }
 
 .about__link {
@@ -3065,6 +3069,7 @@ img {
 
 @media screen and (max-width: 976px) {
   .about__main {
+    margin-left: 0;
     padding: 8px !important;
     width: 100%;
   }
@@ -3072,6 +3077,20 @@ img {
     margin-left: 0px !important;
     margin: 0 10px !important;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .about__maintitle {
+    height: 150px !important;
+    background-position: center;
+  }
+  .about__name {
+    padding-top: 60px !important;
+  }
+}
+
+#aboutmain {
+  padding-top: 50px;
 }
 
 .aboutus__list {
@@ -3108,11 +3127,12 @@ img {
 
 .aboutus__title {
   position: relative;
+  font-family: "Mazzard Soft H";
   left: -15px;
   font-size: 2em;
-  font-family: "Mazzard Soft H";
   font-weight: 400;
   line-height: 1.1;
+  margin-bottom: 25px;
   color: #0a472e;
 }
 
@@ -3139,6 +3159,10 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.abcompany {
+  padding-top: 70px;
 }
 
 .abcompany__img {
@@ -3197,5 +3221,34 @@ img {
 
 .abcompany__company {
   width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .abcompany {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .abcompany__num {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .abcompany__main {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__logo {
+  margin-top: 60px;
+  width: 130px;
+  height: 70px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,7 @@
+.abcompany {
+  padding-top: 70px;
+}
+
 .abcompany__img {
   width: 50px;
   height: 50px;
@@ -52,6 +56,17 @@
 
 
 
-@media screen and (max-width: 976px) {
-  
+@media screen and (max-width: 768px) {
+  .abcompany {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .abcompany__num {
+    justify-content: center;
+    align-items: center;
+  }
+  .abcompany__main {
+    margin-bottom: 20px;
+  }
 }
