@@ -1,0 +1,440 @@
+// modal user
+
+.offcanvas {
+  width: 300px;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+  width: 3px;
+}
+
+.offcanvas-body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.modaluser__logo {
+  width: 130px;
+  height: 71px;
+}
+
+.modaluser__span {
+  text-align: left;
+  font-size: 16px;
+  display: inline-block;
+  color: #bac34e;
+}
+
+
+
+.input-group-text {
+  background-color: transparent !important;
+  border: 1px solid rgba(170, 170, 170, 0.301);
+}
+
+.form-control {
+  border: 1px solid rgba(170, 170, 170, 0.301);
+}
+
+::placeholder {
+  font-size: 14px;
+  color: #e2e2e2;
+  ;
+}
+
+.form-check-input {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.form-check-label {
+  font-size: 12px;
+  color: #414141;
+  font-size: .875rem;
+}
+
+.modaluser__forgot {
+  font-size: 13px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  color: #555;
+
+  &:hover {
+    color: #bac34e;
+  }
+}
+
+.modaluser__btn {
+  @include btn ();
+}
+
+
+.modaluser__connect {
+  width: 100%;
+  font-family: "Mazzard Soft H";
+  font-weight: 400;
+  line-height: 1.1;
+  font-size: 16px;
+  margin-top: 35px;
+  display: inline-block;
+  color: #bac34e;
+}
+
+
+.modaluser__icon {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  color: #fff;
+  background: #4C68A2;
+  cursor: pointer;
+
+  &:hover {
+    color: #4C68A2;
+    background-color: transparent;
+    border: 1px solid #4C68A2;
+  }
+}
+
+.faccebook {
+  background-color: #4285f4;
+
+
+  &:hover {
+    color: #4285f4;
+    background-color: transparent;
+    border: 1px solid #4285f4;
+  }
+}
+
+.twitter {
+  background-color: #53d1f8;
+
+  &:hover {
+    color: #53d1f8;
+    background-color: transparent;
+    border: 1px solid #53d1f8;
+  }
+}
+
+
+.newacc {
+  font-size: 1.125rem;
+  line-height: 1.1;
+}
+
+.form-check-input {
+  margin-top: 7px;
+}
+
+.modaluser__acc {
+  padding: 9px;
+}
+
+.lanimg {
+  width: 18px;
+  height: auto;
+}
+
+.modal__user {
+  border-right: 1px solid rgba(156, 156, 156, 0.644);
+}
+
+.modal__lanlink {
+  text-decoration: none;
+}
+
+.modaluser__lanspan {
+  font-family: $font-mazzard-normal;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  color: #aaa;
+}
+
+.modaluser__text {
+  font-family: $font-mazzard-normal;
+  font-size: 14px;
+  font-weight: 600;
+  color: #aaa;
+}
+
+
+.modaluser__eur {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  color: #aaa;
+
+  &:hover {
+    color: #bac34e;
+  }
+}
+
+.modaluser__usd {
+  text-decoration: none;
+  font-size: 13px;
+  color: #bac34e;
+}
+
+.sing__link {
+  text-decoration: none;
+  transition: all0 0.3s ease;
+  color: #aaa;
+
+  &:hover {
+    color: #bac34e;
+  }
+}
+
+
+
+
+// left modal 
+
+.offcanvas-start {
+  background-color: $color-modal;
+}
+
+.close__btn {
+  position: absolute;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  color: $hover-color;
+}
+
+.resphome__list {
+  padding-left: 0;
+  @include list-unstyled();
+}
+
+.resphome__link {
+  text-decoration: none;
+  color: #fff;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+.resphome__item {
+  position: relative;
+}
+
+.resphome__item::after {
+  content: '';
+  width: 110%;
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: -12px;
+  border-bottom: 1px solid $color-primary;
+  opacity: 0.3;
+}
+
+.resphone__item--border::before {
+  content: '';
+  width: 110%;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: -12px;
+  border-top: 1px solid $color-primary;
+  opacity: 0.3;
+}
+
+
+.resphome__icon {
+  font-size: 18px;
+  color: #fff;
+}
+
+.resphome__home {
+  @include list-unstyled();
+}
+
+.resphome__item--home {
+  position: relative;
+}
+
+.resphome__item--home::after {
+  content: '';
+  width: 110%;
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: -12px;
+  border-bottom: 1px solid $color-primary;
+  opacity: 0.3;
+}
+
+.resphone__item--one::before {
+  content: '';
+  width: 110%;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: -12px;
+  border-top: 1px solid $color-primary;
+  opacity: 0.3;
+}
+
+
+
+
+// home 1
+
+
+.resphome__left {
+  color: #fff;
+  font-size: 18px;
+}
+
+
+// blog
+.blog__header {
+  padding-bottom: 0 !important;
+}
+
+.blog__list {
+  padding-top: 0 !important;
+}
+
+.blog__items {
+  padding-top: 0 !important;
+  width: 100%;
+}
+
+.blog__img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+}
+
+
+
+
+// modal product
+
+
+
+.apple__img {
+  width: 375px;
+  height: 325px;
+  border: 1px solid rgb(216, 216, 216);
+}
+
+
+.apple__small-pic {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.apple__content {
+  width: 1000px !important;
+  height: 550px !important;
+  margin: 0 auto;
+}
+
+.apple__dialog {
+  position: relative;
+  left: -250px;
+}
+
+
+.apple__title {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.375rem;
+  margin-bottom: 0.5rem;
+    font-family: $font-mazzard-normal;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.apple__span {
+  color: #e0bf96;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.apple__p {
+  font-size: 16px;
+  color: $color-border;
+}
+
+.apple__number {
+  padding: 15px;
+  width: 120px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 40px;
+}
+
+.apple__heart {
+  padding-top: 10px !important;
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-primary;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+.apply__modal__divvv {
+  padding: 10px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+.appley__icons {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.apple__hr {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.apple__list {
+  padding-left: 0;
+  @include list-unstyled();
+  padding-top: 10px !important;
+}
+
+
+.apple__link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: $color-primary;
+  transform: translate(1);
+
+  &:hover {
+      transform: scale(1.5);
+  }
+}
+
+.apply__face {
+  font-size: 18px;
+  color: #4285f4;
+}
+
+.app-twiter {
+  color: #53d1f8;
+}
+.app-fa {
+  color: red;
+}

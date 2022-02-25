@@ -1,0 +1,151 @@
+.home-rela {
+  position: relative;
+  padding: 20px 0;
+}
+
+.home__drob-home {
+  position: absolute;
+  top: 70px;
+  transform: translateY(-10px);
+  width: 200px;
+  height: 290px;
+  display: none;
+  transition: all 0.1s ease;
+  z-index: 5;
+  background-color: #fff;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.5);
+  animation: homedrob 1s ease;
+}
+@keyframes homedrob {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {  
+    transform: translateY(-10px);
+  }
+}
+.home-rela:hover .homedrob {
+  transform: translateY(-20);
+  display: block;
+}
+
+.homedrob__list {
+  padding-left: 0;
+  @include list-unstyled();
+  padding: 20px;
+}
+
+.homedrob__link {
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  color: $color-primary;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+
+
+
+
+// shop drob
+
+
+.shop-rela {
+  position: relative;
+  padding: 20px 0;
+}
+
+.home__drob-shop {
+  position: absolute;
+  top: 70px;
+  left: -130px;
+  transform: translateY(-10px);
+  width: 600px;
+  height: 250px;
+  z-index: 5;
+  display: none !important;
+  transition: all 0.1s ease;
+  background-color: #fff;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.5);
+  animation: shopdrob 1s ease;
+}
+@keyframes shopdrob {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {  
+    transform: translateY(-10px);
+  }
+}
+
+.shop-rela:hover .homedrob {
+  transform: translateY(-20);
+  display: block !important; 
+}
+
+.shopdown__title {
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  cursor: pointer; 
+
+  &:hover {
+    color: $hover-color
+  }
+}
+
+// page
+
+
+.page-rela {
+  position: relative;
+  padding: 20px 0;
+}
+
+.home__drob-page {
+  position: absolute;
+  top: 70px;
+  left: -200px;
+  transform: translateY(-10px);
+  width: 550px;
+  height: 100px;
+  display: none; 
+  transition: all 0.1s ease;
+  z-index: 5;
+  background-color: #fff;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.5);
+  animation: pagedrob 1s ease;
+}
+@keyframes pagedrob {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {  
+    transform: translateY(-10px);
+  }
+}
+
+.page-rela:hover .home__drob-page{
+  transform: translateY(-20);
+  display: block; 
+  padding: 0 15px;
+}
+
+.page__list{
+  @include list-unstyled();
+  padding: 20px 8px;
+}
+
+.page__img {
+  width: 150px;
+  height: 60px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+

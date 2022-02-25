@@ -1,0 +1,133 @@
+#people {
+  padding-top: 60px;
+}
+
+.goog__img {
+  width: 580px;
+  height: 355px; 
+}
+
+.good__text-div {
+  padding-left: 80px;
+}
+.good__title {
+  font-size: 30px;
+    font-weight: 400;
+    color: #0a472e;
+    letter-spacing: -.75px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    max-width: 370px;
+}
+.good__text {
+  width: 420px;
+  font-weight: 400;
+  font-size: 14px;
+    color: #555;
+    margin-bottom: 1.25em;
+}
+.good__decs {
+  width: 420px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+}
+
+.good__btn {
+  font-size: 12px;
+  color: #bac34e;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid #bac34e;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $hover-color;
+  }
+  &:hover .good__icon {
+    transform: translateX(3px);
+  }
+}
+.good__icon {
+  position: relative;
+  top: 2px;
+  transition: all 0.3s ease;
+}
+
+
+
+.carusel__div {
+  padding-left: 80px;
+}
+.causel__icon {
+  position: relative;
+  top: 50px;
+  font-size: 50px;
+  color: $hover-color;
+}
+
+.carousel-indicators {
+  width: 100px;
+  position: absolute;
+  bottom: -50px;
+  left: -40px;
+}
+.borderrradios {
+  width: 8px !important;
+  height: 8px !important;
+  margin-right: 8px !important;
+  background-color: gray !important;
+  border-radius: 50% !important;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .goog__img {
+    height: auto;
+    padding: 0 20px !important;
+  }
+  .good__text-div {
+    padding-left: 20px !important;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .good {
+    flex-direction: column;
+  }
+  .good__text {
+    width: 100%;
+  }
+  .good__decs {
+    width: 100%;
+  }
+  .good__title {
+    width: 100%;
+  }
+  .goog__img {
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+  .good__text-div {
+    padding-left: 0 !important;
+  }
+  .good__carusel {
+    flex-direction: column !important;
+  }
+  .good__pic {
+    width: 100% !important;
+    height: auto !important; 
+  }
+  .good__boximg {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+  }
+}

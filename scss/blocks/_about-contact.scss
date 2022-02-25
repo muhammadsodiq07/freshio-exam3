@@ -1,0 +1,57 @@
+.abcompany__img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.abcompany__text {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: $color-primary;
+}
+
+.abcompany__link {
+  font-size: 20px;
+  text-decoration: none;
+  color: $hover-color;
+}
+
+.abcompany__pp {
+  font-size: 14px;
+  display: inline-block;
+  border-bottom: 1px solid $hover-color;
+  color: $color-primary;
+}
+.abcompany__desc {
+  position: relative;
+  top: 5px;
+}
+.abcompany__link--icons {
+  text-decoration: none !important;
+}
+.abcompany__boxicon {
+  padding-top: 25px;
+} 
+.apcombany__icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition:  all 0.3s ease;
+  color: $hover-color;
+
+  &:hover {
+    color: $color-modal;
+  }
+}
+
+.abcompany__company {
+  width: 350px;
+}
+
+
+
+@media screen and (max-width: 976px) {
+  
+}

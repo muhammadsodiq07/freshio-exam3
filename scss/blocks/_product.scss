@@ -1,0 +1,246 @@
+#featured {
+  padding-top: 40px;
+}
+
+
+.product__title1 {
+  font-size: 30px;
+  color: #0a472e;
+  font-weight: 400;
+  letter-spacing: -0.75px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.product__title1::before {
+  content: '';
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 2px solid $hover-color;
+  border-radius: 50%;
+  color: $hover-color;
+}
+.product__link1 {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: $hover-color;
+  padding-bottom: 5px;
+  display: inline-block;
+  line-height: 24px;
+  border-bottom: 1px solid $hover-color;
+  transition: all 0.3s ease;
+}
+.product__link1:hover {
+  color:$hover-color;
+  transition: all 0.3s ease;
+}
+.product__link1:hover .product__icon1 {
+  transform: translateX(3px);
+  transition: all 0.3s ease;
+}
+.product__icon1 {
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+.product__list {
+  padding: 0 !important;
+}
+.product__box {
+  position: relative;
+  width: 300px;
+  height: 480px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+}
+
+.product__text {
+  position: relative;
+}
+
+.product__text::before {
+  content: '';
+  width: 290px;
+  height: 300px;
+  display: inline-block;
+  background-image: url('https://demo73leotheme.b-cdn.net/prestashop/at_freshio/31-home_default/the-best-is-yet-to-come-framed-poster.jpg');
+  background-repeat: no-repeat;
+  background-position: center left -28px;
+  background-size: cover;
+}
+
+.product__item {
+  overflow: hidden;
+}
+.product__item:nth-child(2) .product__text::before {
+  background-image: url('https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/mountain-fox-cushion.jpg'); 
+}
+.product__item:nth-child(3) .product__text::before {
+  background-image: url('https://demo73leotheme.b-cdn.net/prestashop/at_freshio/33-home_default/today-is-a-good-day-framed-poster.jpg');
+}
+.product__item:nth-child(4) .product__text::before {
+  background-image: url('https://demo73leotheme.b-cdn.net/prestashop/at_freshio/36-home_default/mug-today-is-a-good-day.jpg');
+}
+.product__link {
+  text-decoration: none;
+}
+
+.product__text {
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 0 !important;
+  color: $hover-color;
+}
+
+.product__span {
+  display: inline-block;
+  padding: 10px;
+  margin-top: -20px !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.product__num {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: -8px !important;
+  color: #e0bf96;
+  font-size: 16px;
+  font-weight: 400;
+}
+.product__num::after {
+  content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transform-origin: 50% 50%;
+    transition: all 0.3s ease;
+    width: 15%;
+    height: 1px;
+    background: $hover-color;
+}
+.product__item:hover .product__num::after{
+  width: 35%;
+}
+
+.product__mian-div {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product__add {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.25;
+  transition: all 0.3s ease;
+  color: $color-primary;
+  font-weight: 700;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+.addrigt {
+  transition: all 0.2s ease;
+  margin-left: 5px;
+}
+.product__add:hover .addrigt {
+  transform: translateX(3px);
+}
+
+
+.product__icons {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.product__link--icon {
+  text-decoration: none;
+}
+.product__boicons {
+  font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+  opacity: 0;
+  margin-right: 5px;
+  color: $color-modal;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 50%;
+  background-color: #fff !important;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #fff;
+    background-color:$color-modal !important;
+    border: 1px solid transparent;
+  }
+}
+
+.product__item:hover .product__boicons{
+  transform: translateY(-30px);
+  opacity: 1;
+}
+.border__img {
+  background-color: transparent;
+  border: none;
+}
+
+
+@media screen and (max-width: 1230px) {
+
+  .product__list {
+    justify-content: space-evenly !important;
+  }
+  .product__item:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .product__item:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width:630px) {
+
+  .product__item:nth-child(2) {
+    display: none;
+  }
+  .before-title  {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .product__title1 {
+    text-align: center;
+    width: 100%;
+  }
+  .product__link1 {
+    margin-bottom: 20px;
+  }
+}
