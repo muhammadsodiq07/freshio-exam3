@@ -438,3 +438,10 @@
 .app-fa {
   color: red;
 }
+
+
+@media screen and (max-width: 978px) {
+  .apple__dialog {
+    display: none !important;
+  }
+}

@@ -1197,6 +1197,12 @@ img {
   color: red;
 }
 
+@media screen and (max-width: 978px) {
+  .apple__dialog {
+    display: none !important;
+  }
+}
+
 .store {
   padding-top: 50px;
 }
@@ -3199,7 +3205,7 @@ img {
     margin-left: 0px !important;
     margin: 0 10px !important;
   }
-  .shop__btn {
+  .shop__color {
     position: absolute !important;
     left: 16px !important;
   }
