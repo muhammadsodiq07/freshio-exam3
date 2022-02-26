@@ -139,7 +139,7 @@ img {
 .back-color {
   width: 100%;
   max-width: 1450px;
-  height: 1000%;
+  height: 1100%;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -301,11 +301,28 @@ img {
 }
 
 .header__user-heart {
+  position: relative;
   background-color: #f6f3e3;
 }
 
 .header__shop-icon {
+  position: relative;
   background-color: #f3e4dc;
+}
+
+.header__nul {
+  position: absolute;
+  display: inline-block;
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #E0BF96;
 }
 
 .header__box-icon {
@@ -587,13 +604,13 @@ img {
     width: 95%;
   }
   .shop__drobin {
-    display: none;
+    display: none !important;
   }
   .shop__drobin2 {
-    display: none;
+    display: none !important;
   }
   .shop__drobin3 {
-    display: none;
+    display: none !important;
   }
   .responsive__burger {
     margin-left: 10px;
@@ -1274,6 +1291,11 @@ img {
   color: #fff;
 }
 
+.resphome__accbtn {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
 .home-rela {
   position: relative;
   padding: 20px 0;
@@ -1480,6 +1502,29 @@ img {
 .page__img:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+.resphome__accard {
+  padding: 0 !important;
+}
+
+.resphome__accardion {
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.resphome__accardion::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  opacity: 0.3;
 }
 
 .hero__img {
@@ -1762,6 +1807,11 @@ img {
 }
 
 .natural__item:hover::after {
+  opacity: 1;
+  width: 140%;
+}
+
+.natural__item:last-child:hover::after {
   opacity: 1;
   width: 100%;
 }
@@ -3108,6 +3158,10 @@ img {
   .about {
     margin-left: 0px !important;
     margin: 0 10px !important;
+  }
+  .shop__btn {
+    position: absolute !important;
+    left: 16px !important;
   }
 }
 

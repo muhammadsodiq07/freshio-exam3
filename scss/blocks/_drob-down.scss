@@ -149,3 +149,28 @@
   }
 }
 
+
+.resphome__accard {
+  padding: 0 !important;
+}
+
+.resphome__accardion {
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  color: $color-white;
+}
+
+.resphome__accardion::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: inline-block;
+  border-bottom: 1px solid $color-primary;
+  opacity: 0.3;
+}
+
+

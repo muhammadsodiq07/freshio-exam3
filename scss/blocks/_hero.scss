@@ -232,6 +232,10 @@
 
 .natural__item:hover::after {
   opacity: 1;
+  width: 140%;
+}
+.natural__item:last-child:hover::after {
+  opacity: 1;
   width: 100%;
 }
 .natural__item::before {
