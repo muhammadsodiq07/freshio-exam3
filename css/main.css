@@ -149,6 +149,39 @@ img {
   background-image: none;
 }
 
+.top {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-top: 3px;
+  cursor: pointer;
+  opacity: 0;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-color: #bac34e;
+}
+
+.top:hover {
+  background-color: #0a472e;
+}
+
+.topicon {
+  font-size: 24px;
+  color: #fff;
+}
+
+.topicon:hover {
+  color: #fff;
+}
+
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;

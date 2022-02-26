@@ -45,3 +45,38 @@ img {
   background-color: $color-white;
   background-image: none;
 }
+
+
+
+
+.top {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding-top: 3px;
+  cursor: pointer;
+  opacity: 0;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-color: $hover-color;
+
+  &:hover {
+    background-color: $color-modal;
+  }
+}
+
+.topicon {
+  font-size: 24px;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+  }
+}
