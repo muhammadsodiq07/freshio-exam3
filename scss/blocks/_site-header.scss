@@ -116,3 +116,11 @@
     padding-top: 60px !important;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .shop__color {
+    position: absolute !important;
+    top: -2px !important;
+    left: 10px !important;
+  }
+}

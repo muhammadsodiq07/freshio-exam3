@@ -661,6 +661,14 @@ img {
   }
 }
 
+@media screen and (max-width: 380px) {
+  .shop__btn {
+    position: absolute;
+    top: -1px !important;
+    left: -2px !important;
+  }
+}
+
 .fixsed {
   position: fixed;
   bottom: 0;
@@ -3218,6 +3226,14 @@ img {
   }
   .about__name {
     padding-top: 60px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .shop__color {
+    position: absolute !important;
+    top: -2px !important;
+    left: 10px !important;
   }
 }
 
