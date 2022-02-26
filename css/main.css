@@ -156,7 +156,7 @@ img {
   line-height: 43px;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 50px;
   color: #fff;
   text-align: center;
   -webkit-transition: all 0.3s ease;
@@ -180,6 +180,13 @@ img {
 
 .topicon:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 978px) {
+  .top {
+    right: 25px !important;
+    bottom: 85px !important;
+  }
 }
 
 /* VISUALLY-HIDDEN */

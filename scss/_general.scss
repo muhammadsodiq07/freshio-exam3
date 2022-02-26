@@ -56,7 +56,7 @@ img {
   line-height: 43px;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 50px;
   color: #fff;
   text-align: center;
   transition: all 0.3s ease;
@@ -79,4 +79,11 @@ img {
   &:hover {
     color: $color-white;
   }
+}
+
+@media screen and (max-width: 978px) {
+   .top {
+     right: 25px !important;
+     bottom: 85px !important;
+   } 
 }
