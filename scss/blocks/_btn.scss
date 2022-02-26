@@ -1,3 +1,8 @@
+.store{
+  padding-top: 50px;
+}
+
+
 .resphome__btn {
   border: none !important;
   background-color: transparent !important;
@@ -79,4 +84,28 @@
     background-color: $color-modal;
   }
 }
+
+.store__form {
+  text-align: right;
+  padding-right: 28px;
+}
+
+.store__btnlink {
+  font-size: 12px;
+    font-weight: 700;
+    text-transform: initial;
+    text-decoration: none;
+    background: #bac34e;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #000;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+
+  &:hover {
+    background: $color-modal;
+    color: #fff;
+  }
+}
+
 

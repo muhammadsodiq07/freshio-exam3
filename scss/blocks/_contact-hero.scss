@@ -1,0 +1,157 @@
+.store__title {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 2rem !important;
+  color: $color-primary;
+}
+
+.store__icon {
+  font-size: 40px !important;
+  color: gray;
+}
+
+.store__name {
+  position: relative;
+  top: 10px;
+  font-size: .8125rem;
+  color: $color-primary;
+}
+
+.store__email-name {
+  font-size: .8125rem;
+  color: $color-primary;
+}
+
+.store__link {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #555;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+.store__flex {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  width: 300px;
+}
+
+.store__border {
+  width: 860px;
+  height: 430px;
+  border: 1px solid rgb(199, 199, 199);
+}
+
+
+
+
+
+
+.store__h4 {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: $color-primary;
+}
+
+
+.store__padding {
+  padding: 35px;
+}
+
+.store__input {
+  background-color: $color-border !important;
+  width: 430px;
+  border-radius: 5px;
+}
+
+.store__sel {
+  background-color: rgb(235, 235, 235);
+  color: rgb(119, 119, 119);
+}
+
+.store__span {
+  display: inline-block;
+  padding-right: 150px;
+}
+
+.store__emailadd {
+  padding-right: 100px !important;
+}
+
+.store__emailatt {
+  padding-right: 117px !important;
+}
+
+.store__btn {
+  font-size: .6875rem;
+  font-weight: 400;
+  margin-left: 0;
+  padding: 12.5px 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $hover-color !important;
+}
+
+.store__opti {
+  padding: 5px 20px;
+  font-size: .875rem;
+  color: #878787;
+}
+
+.store__input-mess {
+  width: 550px;
+  height: 80px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .store__border {
+    width: 690px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .store__border {
+    width: 100% !important;
+  }
+
+  .store__input {
+    width: 100%;
+  }
+
+  .store__emailadd {
+    padding-right: 138px !important;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .store__typename {
+    flex-direction: column !important;
+  }
+
+  .store__border {
+    height: auto;
+  }
+
+  .store__input-mess {
+    width: 100% !important;
+  }
+
+  .store__opti {
+    padding-left: 0;
+  }
+}

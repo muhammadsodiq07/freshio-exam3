@@ -25,12 +25,12 @@
       <div class="header d-flex align-items-center justify-content-between">
         <button class="responsive" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
           aria-controls="offcanvasExample">
-          <img class="responsive__burger" src="images/responsive-burger-black.svg " alt="">
+          <img class="responsive__burger" src="images/responsive-burger-black.svg " alt="burger">
         </button>
         <div class="header__logobox">
-          <a class="header__logolink" href="#">
+          <a class="header__logolink" href="index.html">
             <img class="header__img"
-              src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/freshio-logo-1603358296.jpg" alt="">
+              src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/freshio-logo-1603358296.jpg" alt="logo">
           </a>
         </div>
         <div>
@@ -218,7 +218,7 @@
         <nav class="home__nav">
           <ul class="home__list d-flex align-items-center">
             <li class="home__item me-4 home-rela">
-              <a class="home__link d-flex align-items-center" href="#">
+              <a class="home__link d-flex align-items-center" href="index.html">
                 Home
                 <i class='bx bxs-chevron-down'></i>
               </a>
@@ -467,7 +467,7 @@
               </a>
             </li>
             <li class="home__item">
-              <a class="home__link" href="#">
+              <a class="home__link link-active" href="contact.html">
                 Contact
               </a>
             </li>
@@ -487,7 +487,7 @@
           <i class='bx bx-chevron-right about__icon'></i>
         </a>
         <a class="about__link" href="about.html">
-          About us
+          Contact us
         </a>
       </div>
     </div>
@@ -496,109 +496,99 @@
 
   <main id="main">
     <div class="container">
-      <div class="aboutus" id="aboutmain">
-        <h2 class="aboutus__title">
-          About us
-        </h2>
-        <h2 class="aboutus__pp">
-          About us
-        </h2>
-        <ul class="aboutus__list d-flex justify-content-between col-lg-12">
-          <li class="aboutus__item col-sm-4 col-md-4 col-lg-4">
-            <p class="aboutus__text">
-              Our commany
-            </p>
-            <p class="aboutus__desc1">
-              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididun.
-            </p>
-            <p class="aboutus__desc">
-              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
-            </p>
-            <p class="aboutus__pagh">Top quality products <br>
-              Best customer service <br>
-              30-days money back guarantee</p>
-          </li>
-          <li class="aboutus__item col-sm-4 col-md-4 col-lg-4">
-            <p class="aboutus__text">
-              Our commany
-            </p>
-            <p class="aboutus__desc1">
-              <img src="" alt="cms-img"> <br>
-              Lorem ipsum dolor sit amet conse ctetur adipisicing.
-            </p>
-            <p class="aboutus__desc">
-              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
-            </p>
-          </li>
-          <li class="aboutus__item col-sm-4 col-md-4 col-lg-4">
-            <p class="aboutus__text">
-              Our commany
-            </p>
-            <p class="aboutus__desc1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus libero exercitationem inventore
-              ipsa unde. Alias obcaecati ut repellat hic.
-            </p>
-            <p class="aboutus__desc">
-              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
+      <div class="store col-lg-12 row">
+        <div class="store__main-div col-12 col-lg-4">
+          <h4 class="store__title mb-0">
+            STORE INFORMATION
+          </h4>
+          <div class="store__location">
+            <div class="store__flex mb-4 d-flex align-items-center">
+              <i class='bx bxs-edit-location store__icon me-4'></i>
+              <p class="store__name">Freshio <br>
+                France</p>
+            </div>
+            <div class="store__email d-flex align-items-center mb-4">
+              <i class='bx bxs-envelope-open store__icon me-4'></i>
+              <div>
+                <p class="store__email-name mb-0 p-0">Email us:</p>
+                <a class="store__link" href="#">
+                  demo@demo.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="store__contact-div col-12 col-lg-8">
+          <div class="store__border">
+            <div class="store__padding">
+              <h4 class="store__h4">
+                CONTACT US
+              </h4>
+              <form action="https://echo.htmlacadamy.ru">
+                <div class="store__typename d-flex pt-4">
+                  <span class="store__span">
+                    Subject
+                  </span>
+                  <div class="input-group store__input mb-3">
+                    <select class="form-select store__sel" id="inputGroupSelect02">
+                      <option selected>Costumers service</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="store__typename d-flex">
+                  <span class="store__span store__emailadd">
+                    Email address
+                  </span>
+                  <div class="input-group store__input mb-3">
+                    <input type="email" class="form-control" placeholder="your@email.com" aria-label="Username"
+                      aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="store__typename d-flex">
+                  <span class="store__span store__emailatt">
+                    Attachment
+                  </span>
+                  <div class="input-group store__input mb-3">
+                    <input type="text" class="form-control" readonly aria-label="Recipient's username"
+                      aria-describedby="basic-addon2">
+                    <span class="input-group-text store__btn" id="basic-addon2">choose file</span>
+                  </div>
+                  <span class="store__opti">optional</span>
+                </div>
+                <div class="store__typename d-flex">
+                  <span class="store__span">
+                    Subject
+                  </span>
+                  <input class="store__input-mess" type="" name="text" id="text" placeholder="How can we help?">
+                </div>
+                <div class="store__form pt-4">
+                  <a class="store__btnlink" href="#">
+                    Send
+                  </a>
+                </div>
 
-    <div class="containerr">
-      <div class="abcompany col-lg-12 row align-items-center">
-        <div class="abcompany__main col-12 col-md-6 col-lg-3">
-          <div class="abcompany__num d-flex align-items-center">
-            <img class="abcompany__img me-3" src="images/form-img-one.png" alt="number">
-            <div class="abcompany__desc">
-              <p class="abcompany__text p-0">
-                CALL US 24/7
-              </p>
-              <a class="abcompany__link" href="tel:55846484">
-                (1800)-88-66-991
-              </a>
+              </form>
             </div>
           </div>
         </div>
-        <div class="abcompany__main col-12 col-md-6 col-lg-3">
-          <div class="abcompany__num d-flex align-items-center">
-            <img class="abcompany__img me-3" src="images/form-img-two.png" alt="number">
-            <div class="abcompany__desc">
-              <p class="abcompany__text p-0">
-                EMAIL US
-              </p>
-              <p class="abcompany__pp" href="#">
-                demo@demo.com
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="abcompany__main col-12 col-md-6 col-lg-3">
-          <div class="abcompany__boxicon">
-            <a class="abcompany__link--icons me-2" href="#">
-              <i class='bx bxl-facebook apcombany__icon'></i>
-            </a>
-            <a class="abcompany__link--icons me-2" href="#">
-              <i class='bx bxl-twitter apcombany__icon'></i>
-            </a>
-            <a class="abcompany__link--icons me-2" href="#">
-              <i class='bx bxl-youtube apcombany__icon'></i>
-            </a>
-            <a class="abcompany__link--icons me-2" href="#">
-              <i class='bx bxl-instagram apcombany__icon'></i>
-            </a>
-          </div>
-        </div>
-        <div class="abcompany__main col-12 col-md-6 col-lg-3">
-          <img class="abcompany__company"
-            src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_payment_image.png?v=1604630477" alt="">
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-    </div>
   </main>
 
 
